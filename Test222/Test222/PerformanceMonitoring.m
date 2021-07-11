@@ -51,7 +51,6 @@
         [link addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSRunLoopCommonModes];
         link.preferredFramesPerSecond = 60;
         _link = link;
-        
     }
     return _link;
 }

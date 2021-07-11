@@ -16,6 +16,8 @@
 		F0BBF8E42355CD7900BBA783 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BBF8E32355CD7900BBA783 /* main.m */; };
 		F0BBF8EE2355CD7900BBA783 /* Test222Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = F0BBF8ED2355CD7900BBA783 /* Test222Tests.m */; };
 		F0D4C6692363E43300E84211 /* UILabel+SetText.m in Sources */ = {isa = PBXBuildFile; fileRef = F0D4C6682363E43300E84211 /* UILabel+SetText.m */; };
+		F0E286E8269B1769001EBC70 /* LXDBacktraceLogger.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E286E4269B1769001EBC70 /* LXDBacktraceLogger.m */; };
+		F0E286E9269B1769001EBC70 /* LXDAppFluecyMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = F0E286E7269B1769001EBC70 /* LXDAppFluecyMonitor.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +48,10 @@
 		F0BBF8EF2355CD7900BBA783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0D4C6672363E43300E84211 /* UILabel+SetText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+SetText.h"; sourceTree = "<group>"; };
 		F0D4C6682363E43300E84211 /* UILabel+SetText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+SetText.m"; sourceTree = "<group>"; };
+		F0E286E4269B1769001EBC70 /* LXDBacktraceLogger.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDBacktraceLogger.m; sourceTree = "<group>"; };
+		F0E286E5269B1769001EBC70 /* LXDBacktraceLogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDBacktraceLogger.h; sourceTree = "<group>"; };
+		F0E286E6269B1769001EBC70 /* LXDAppFluecyMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LXDAppFluecyMonitor.h; sourceTree = "<group>"; };
+		F0E286E7269B1769001EBC70 /* LXDAppFluecyMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LXDAppFluecyMonitor.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +99,7 @@
 				F0BBF8D82355CD7800BBA783 /* ViewController.m */,
 				F0624722236402FF0063A221 /* PerformanceMonitoring.h */,
 				F0624723236402FF0063A221 /* PerformanceMonitoring.m */,
+				F0E286E2269B1769001EBC70 /* LXDAppFluecyMonitor */,
 				F0D4C6672363E43300E84211 /* UILabel+SetText.h */,
 				F0D4C6682363E43300E84211 /* UILabel+SetText.m */,
 				F0BBF8DA2355CD7800BBA783 /* Main.storyboard */,
@@ -111,6 +118,25 @@
 				F0BBF8EF2355CD7900BBA783 /* Info.plist */,
 			);
 			path = Test222Tests;
+			sourceTree = "<group>";
+		};
+		F0E286E2269B1769001EBC70 /* LXDAppFluecyMonitor */ = {
+			isa = PBXGroup;
+			children = (
+				F0E286E3269B1769001EBC70 /* Backtrace */,
+				F0E286E6269B1769001EBC70 /* LXDAppFluecyMonitor.h */,
+				F0E286E7269B1769001EBC70 /* LXDAppFluecyMonitor.m */,
+			);
+			path = LXDAppFluecyMonitor;
+			sourceTree = "<group>";
+		};
+		F0E286E3269B1769001EBC70 /* Backtrace */ = {
+			isa = PBXGroup;
+			children = (
+				F0E286E4269B1769001EBC70 /* LXDBacktraceLogger.m */,
+				F0E286E5269B1769001EBC70 /* LXDBacktraceLogger.h */,
+			);
+			path = Backtrace;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,6 +240,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0BBF8D92355CD7800BBA783 /* ViewController.m in Sources */,
+				F0E286E9269B1769001EBC70 /* LXDAppFluecyMonitor.m in Sources */,
+				F0E286E8269B1769001EBC70 /* LXDBacktraceLogger.m in Sources */,
 				F0BBF8E42355CD7900BBA783 /* main.m in Sources */,
 				F0D4C6692363E43300E84211 /* UILabel+SetText.m in Sources */,
 				F0624724236402FF0063A221 /* PerformanceMonitoring.m in Sources */,
